@@ -146,6 +146,15 @@ export default function Register() {
                 <p className="text-ink-muted">
                   Check your inbox for confirmation, then join our Discord for updates{form.role === 'participant' ? ' and team-forming' : ''}.
                 </p>
+                {form.role === 'participant' && (
+                  <p className="text-ink-muted mt-2">
+                    New to quantum computing? Visit our{' '}
+                    <Link to="/learn" className="text-cyan-text hover:text-cyan-strong underline underline-offset-2">
+                      Learn page
+                    </Link>{' '}
+                    to pick up the basics before the event.
+                  </p>
+                )}
                 <a
                   href={EVENT.discord}
                   target="_blank"

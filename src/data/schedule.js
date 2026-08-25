@@ -3,14 +3,15 @@
 // build week (Mon–Wed), ending with the submission deadline.
 
 export const VENUES = [
-  { day: 'Weekend sessions', room: 'STEM Complex, University of Ottawa — exact room TBA' },
+  { day: 'Weekend sessions (Oct 3–4)', room: 'CRX 240, Learning Crossroads, University of Ottawa' },
+  { day: 'Finale (Oct 10)', room: 'STM 117, STEM Complex, University of Ottawa' },
 ]
 
 export const SCHEDULE = {
   day1: {
     label: 'Day 1 — Sat, Oct 3',
     theme: 'Talks & Hands-on Labs',
-    location: 'STEM Complex, University of Ottawa',
+    location: 'CRX 240, Learning Crossroads, University of Ottawa',
     sessions: [
       { time: '09:00–09:30', title: 'Check-in & Welcome', detail: 'Badges, housekeeping, event flow.' },
       { time: '09:30–10:00', title: 'Opening Ceremony', detail: '' },
@@ -27,7 +28,7 @@ export const SCHEDULE = {
   day2: {
     label: 'Day 2 — Sun, Oct 4',
     theme: 'Talks & Hands-on Labs',
-    location: 'STEM Complex, University of Ottawa',
+    location: 'CRX 240, Learning Crossroads, University of Ottawa',
     sessions: [
       { time: '09:00–09:30', title: 'Check-in & Welcome', detail: '' },
       { time: '09:30–10:20', title: 'Bridging Quantum Computing & Quantum Chemistry / Materials Science', detail: 'How quantum simulation applies to molecules and materials — and how to implement it.' },
@@ -48,6 +49,14 @@ export const SCHEDULE = {
       { time: 'Mon–Tue, Oct 5–6', title: 'Build Period', detail: 'Work on your project at your own pace. Mentors available on Discord for questions.' },
       { time: 'Tue, Oct 6 (evening)', title: 'Optional Mentor Check-in', detail: 'Live Q&A on Discord for teams who want feedback before submitting.' },
       { time: 'Wed, Oct 7 — 11:59 PM ET', title: 'Submission Deadline', detail: 'Submit your slides, a recorded video (max 5 min) explaining your slides, your GitHub repo, and any relevant docs.' },
+    ],
+  },
+  finale: {
+    label: 'Finale — Sat, Oct 10',
+    theme: 'Presentations & Prize Distribution',
+    location: 'STM 117, STEM Complex, University of Ottawa',
+    sessions: [
+      { time: 'Sat, Oct 10', title: 'Final Presentations & Prize Distribution', detail: 'Teams present their hackathon projects; winners announced and prizes awarded.' },
     ],
   },
 }

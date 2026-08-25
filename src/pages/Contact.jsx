@@ -29,6 +29,17 @@ export default function Contact() {
         ))}
       </div>
 
+      <div className="grid gap-5 sm:grid-cols-2 mb-6">
+        {VENUES.map((v, i) => (
+          <Reveal key={v.day} delay={i * 0.06}>
+            <GlassCard className="p-6">
+              <p className="font-mono text-xs text-cyan-text mb-1">{v.day}</p>
+              <p className="text-ink font-display">{v.room}</p>
+            </GlassCard>
+          </Reveal>
+        ))}
+      </div>
+
       <div className="grid gap-6 lg:grid-cols-5 mb-16">
         <Reveal className="lg:col-span-3">
           <GlassCard className="p-2 overflow-hidden">

@@ -7,7 +7,7 @@ export const CHANNELS = [
   { label: '#ask-a-mentor', desc: 'Technical help during the hackathon, on Discord.', cta: 'Open Discord', href: EVENT.discord },
 ]
 
-// Venue not finalized yet — map shows STEM Complex as a placeholder.
-// Update MAP_QUERY once the real room/building is confirmed; the embed needs no API key.
-export const MAP_QUERY = 'STEM Complex, University of Ottawa'
-export const MAP_NOTE = "Exact venue is still being finalized — the pin above shows STEM Complex as a placeholder. We'll update this as soon as the room is confirmed."
+// Map shows the main weekend venue. The finale (Oct 10) is at a different
+// building — see the venue list on this page and the About page for both.
+export const MAP_QUERY = 'CRX 240, Learning Crossroads, University of Ottawa'
+export const MAP_NOTE = "This pin shows the main weekend venue (Oct 3–4). The finale on Oct 10 is at a different building — see the venue list above."
