@@ -11,7 +11,10 @@ export const EVENT = {
   location: 'University of Ottawa',
   price: 'Free • Open to everyone',
   discord: 'https://discord.com/invite/aragqZcssc',
-  hackathonRepo: 'https://github.com/uoquantum/QFF25_Hackathon',
+  // This year's starter-code repo, if/when there is one. Only shown on the
+  // /challenges page once it's revealed (see data/challenges.js) — leave
+  // empty until it exists.
+  hackathonRepo: '',
   blurb:
     "Qiskit Fall Fest is a student-run celebration of learning, making, and community building. This year marks a decade of quantum computing on the cloud, and the edition is focused on Quantum Machine Learning, Quantum Chemistry, Materials Science, and Sustainability — bringing together curious beginners, builders, and mentors for a weekend of talks and hands-on labs, followed by a hackathon build week, all powered by IBM Quantum and the uOttawa community.",
 }

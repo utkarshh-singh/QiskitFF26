@@ -7,4 +7,9 @@ export const READY = {
   schedule: false,
   speakers: false,
   volunteers: false,
+  // Hackathon challenges — the /challenges page also enforces an automatic
+  // reveal time on top of this flag (see data/challenges.js). Flip this to
+  // true once CHALLENGES is actually filled in; the page stays hidden until
+  // BOTH this is true AND the reveal time has passed.
+  challenges: false,
 }

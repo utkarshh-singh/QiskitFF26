@@ -7,7 +7,14 @@ export default function SponsorMark({ sponsor, nameSize = 'text-lg', accentDot }
     )
   }
   if (sponsor.logo) {
-    return <img src={assetUrl(sponsor.logo)} alt={sponsor.name} className="max-h-10 max-w-[150px] object-contain" />
+    // White backing plate — sponsor logos vary wildly in color (some are
+    // dark wordmarks meant for light backgrounds), so a fixed light plate
+    // keeps every logo legible regardless of the site's dark/light theme.
+    return (
+      <div className="rounded-lg bg-white px-3 py-2">
+        <img src={assetUrl(sponsor.logo)} alt={sponsor.name} className="max-h-8 max-w-[140px] object-contain" />
+      </div>
+    )
   }
   return (
     <>

@@ -147,9 +147,9 @@ export default function Workshops() {
         <GlassCard className="p-10 text-center">
           <h3 className="font-display text-2xl text-ink mb-3">See this year's challenges</h3>
           <p className="text-ink-muted max-w-md mx-auto mb-7">
-            Full hackathon challenge briefs and starter kits are published on GitHub.
+            Challenge briefs drop right as the hackathon kicks off.
           </p>
-          <GlowButton href={EVENT.hackathonRepo}>Open challenge repo ↗</GlowButton>
+          <GlowButton to="/challenges">View challenges</GlowButton>
         </GlassCard>
       </Reveal>
     </div>

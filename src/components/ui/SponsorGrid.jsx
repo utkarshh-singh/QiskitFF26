@@ -40,11 +40,16 @@ export default function SponsorGrid({ sponsors }) {
               >
                 <div className="mb-4">
                   {s.logo ? (
-                    <img
-                      src={assetUrl(s.logo)}
-                      alt={s.name}
-                      className="h-10 max-w-full w-auto object-contain object-left mb-3"
-                    />
+                    // White backing plate — logos vary in color (some are dark
+                    // wordmarks meant for light backgrounds), so a fixed light
+                    // plate keeps every logo legible in both site themes.
+                    <div className="inline-block rounded-lg bg-white px-3.5 py-2.5 mb-3">
+                      <img
+                        src={assetUrl(s.logo)}
+                        alt={s.name}
+                        className="h-8 max-w-[160px] w-auto object-contain"
+                      />
+                    </div>
                   ) : (
                     <span className={`block h-2.5 w-2.5 rounded-full mb-3 ${accent.dot}`} />
                   )}

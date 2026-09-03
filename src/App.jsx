@@ -16,6 +16,7 @@ const Faq = lazy(() => import('./pages/Faq.jsx'))
 const About = lazy(() => import('./pages/About.jsx'))
 const Contact = lazy(() => import('./pages/Contact.jsx'))
 const CodeOfConduct = lazy(() => import('./pages/CodeOfConduct.jsx'))
+const Challenges = lazy(() => import('./pages/Challenges.jsx'))
 const NotFound = lazy(() => import('./pages/NotFound.jsx'))
 
 export default function App() {
@@ -38,6 +39,7 @@ export default function App() {
             <Route path="/about" element={<PageTransition><About /></PageTransition>} />
             <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
             <Route path="/code-of-conduct" element={<PageTransition><CodeOfConduct /></PageTransition>} />
+            <Route path="/challenges" element={<PageTransition><Challenges /></PageTransition>} />
             <Route path="*" element={<PageTransition><NotFound /></PageTransition>} />
           </Routes>
         </AnimatePresence>

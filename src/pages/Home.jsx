@@ -62,8 +62,8 @@ export default function Home() {
             className="pointer-events-auto mt-10 flex flex-wrap items-center gap-4"
           >
             <GlowButton to="/register">Register now</GlowButton>
-            <GlowButton href={EVENT.hackathonRepo} variant="ghost">
-              View challenges ↗
+            <GlowButton to="/challenges" variant="ghost">
+              View challenges
             </GlowButton>
           </motion.div>
         </div>

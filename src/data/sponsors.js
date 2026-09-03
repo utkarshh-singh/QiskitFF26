@@ -20,7 +20,7 @@ export const SPONSORS = [
   },
   {
     name: 'NEXQT',
-    logo: '/sponsors/NexQT_logo_black.png',
+    logo: '/sponsors/NEXQT_Logo2.png',
     url: 'https://www.nexqt.ca/',
     desc: 'Nexus For Quantum Technologies — a Canadian network connecting researchers and institutions to advance the quantum ecosystem.',
   },
