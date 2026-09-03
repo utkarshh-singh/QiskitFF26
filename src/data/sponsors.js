@@ -30,5 +30,17 @@ export const SPONSORS = [
     url: 'https://cadmic.site',
     desc: 'Academic web design for researchers and groups, helping scholars build a professional online presence.',
   },
+  {
+    name: 'CATC',
+    logo: '/sponsors/CATC_logo.png',
+    url: 'http://www.catc.ca/',
+    desc: 'The Canadian Association of Theoretical Chemists — a nationwide community of theoretical and computational chemistry researchers.',
+  },
+  {
+    name: 'PINQ²',
+    logo: '/sponsors/pinq.png',
+    url: 'https://www.pinq2.com/',
+    desc: "Quebec's digital and quantum innovation platform, giving organizations access to classical, hybrid, and quantum computing power.",
+  },
   { placeholder: true, name: 'More soon' },
 ]
