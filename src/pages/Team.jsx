@@ -36,15 +36,18 @@ function PersonGrid({ people }) {
   )
 }
 
-export default function Organizers() {
+export default function Team() {
   return (
     <div className="section">
       <SectionHeading
         eyebrow="The people behind it"
-        title="Organizing team"
-        description="A student-run team from across uOttawa's quantum, physics, and engineering community."
+        title="Meet the team"
+        description="A student-run crew of organizers and volunteers from across uOttawa's quantum, physics, and engineering community."
       />
 
+      <Reveal>
+        <h3 className="font-display text-xl text-ink mb-6">Organizers</h3>
+      </Reveal>
       <PersonGrid people={ORGANIZERS} />
 
       <Reveal>
